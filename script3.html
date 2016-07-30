@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<head>
+	<meta http-equiv="content-type" content="text/html" />
+
+	<title>Script 3</title>
+</head>
+
+<body>
+
+<form action="">
+<label for="nombre">Nombre</label>
+<input type="text" name="nombre" required/>
+<br />
+
+<label for="email">e-Mail</label>
+<input type="text" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" name="email" required/>
+<br />
+
+<label for="tel">Teléfono (8 dígitos comenzando por 2, 7 o 6)</label>
+<input type="text" pattern="^[2|7|6]\d{7}$">
+<br />
+
+<label for="twuser">usuario twitter</label>
+<input type="text" name="twuser"
+       pattern="^@?(\w){1,15}$"
+       title="Este no parece un usuario de twitter válido"
+       required>
+       
+
+<br />
+<label for="contra">contraseña</label>
+<input type="password" name="contra">
+<br />
+
+<input type="submit" name="enviar" value="enviar"/>
+</form>
+</body>
+</html>
